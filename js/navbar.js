@@ -1,3 +1,4 @@
+AOS.init();
 function accion(){
     console.log('funciona');
     let ancla = document.getElementsByClassName('nav-item');
@@ -5,3 +6,4 @@ function accion(){
         ancla[i].classList.toggle('desaparece');
     }
 }
+
