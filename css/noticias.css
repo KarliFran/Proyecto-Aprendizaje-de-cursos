@@ -1,0 +1,23 @@
+.albun-noticias{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+padding: 1rem;
+}
+.item-noticias{
+}
+.description-item{
+    background: #fff
+}
+.picture-noticia{
+    width: 100%;
+}
+.title-noticia{
+    font-size: 1.4rem;
+    text-align: initial;
+}
+.description-noticia{
+    color: #999;
+    font-size: 1rem;
+    text-align: justify;
+}
