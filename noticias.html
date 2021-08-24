@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/noticias.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto flex</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/noticias.css">
+    </head>
 <body>
         <!--HEADER-->
         <header class="header">
@@ -27,7 +30,8 @@
                 </nav>
             </div>
             <div class="text-principal">
-                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque repellendus reprehenderit, exercitationem architecto iusto vel repellat, excepturi non nostrum quos, asperiores modi distinctio esse perferendis. Quia nisi numquam ipsa? Quos, enim. In recusandae quibusdam praesentium minus accusamus odio, quam velit.</h1>
+                <h1 class="seccion-noti">NOTICIAS</h1>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
             </div>
         </header>
         <!--FIN HEADER-->
@@ -39,9 +43,12 @@
                     <img class="picture-noticia" src="dist/img/imagenes-noticias/jorge.jpg" alt="">
                 </figure>
                 <div class="description-item">
+                    <small class="fecha-item">
+                    By Mike Smith <span class="sep">/</span> 16 September 2017
+                </small>
                 <h1 class="title-noticia">"All things must pass", el disco que liberó a George Harrison cumple 50 años.
                 </h1>
-                <p class="description-noticia">Estoy seguro de que quería que la gente viese que era un compositor y un creador de discos muy consumado por derecho propio. Lo que se escucha en este álbum es a un George Harrison liberado, sin filtros ni limitaciones</p></div>
+                <p class="description-noticia">Estoy seguro de que quería que la gente viese que era un compositor y un creador de discos muy consumado por derecho propio.</p></div>
             </article>
 
             <article class="item-noticias">
@@ -49,6 +56,9 @@
                     <img class="picture-noticia" src="dist/img/imagenes-noticias/bilie.jpg" alt="">
                 </figure>
                 <div class="description-item">
+                    <small class="fecha-item">
+                        By Mike Smith <span class="sep">/</span> 16 September 2017
+                    </small>
                 <h1 class="title-noticia">
                     'Happier than ever' de Billie Eilish, el éxito de no rendirse al éxito
                 </h1>
@@ -63,6 +73,9 @@
                     <img class="picture-noticia" src="dist/img/imagenes-noticias/bob.jpg" alt="">
                 </figure>
                 <div class="description-item">
+                    <small class="fecha-item">
+                        By Mike Smith <span class="sep">/</span> 16 September 2017
+                    </small>
                 <h1 class="title-noticia">
                     Bob Dylan anuncia un nuevo disco de su 'Bootleg Series': 'Springtime In New York'
                 </h1>
@@ -77,6 +90,9 @@
                     <img class="picture-noticia" src="" alt="">
                 </figure>
                 <div class="description-item">
+                    <small class="fecha-item">
+                        By Mike Smith <span class="sep">/</span> 16 September 2017
+                    </small>
                 <h1 class="title-noticia">
                 </h1>
                 <p class="description-noticia"></p>
@@ -88,6 +104,9 @@
                     <img class="picture-noticia" src="" alt="">
                 </figure>
                 <div class="description-item">
+                    <small class="fecha-item">
+                        By Mike Smith <span class="sep">/</span> 16 September 2017
+                    </small>
                 <h1 class="title-noticia">
                 </h1>
                 <p class="description-noticia"></p>
@@ -99,31 +118,34 @@
                     <img src="" alt="">
                 </figure>
                 <div class="description-item">
+                    <small class="fecha-item">
+                        By Mike Smith <span class="sep">/</span> 16 September 2017
+                    </small>
                 <h1 class="title-noticia">
                 </h1>
                 <p class="description-noticia"></p>
                 </div>
             </article>
+            <!--PAGINATION-->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!--FIN-->
 
         <!--Footer-->
 <footer>

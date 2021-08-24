@@ -20,9 +20,10 @@ body{
     flex-flow: column nowrap;
     background-position: center;
     background-attachment: contain;
-    background-image: linear-gradient(to bottom, rgba(62, 0, 255, 0.2) 0%, rgba(90, 36, 155, 0.5) 100%), url(../dist/img/banner-header.jpeg);
+    background-image: linear-gradient(to bottom, rgba(62, 0, 255, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%), url(../dist/img/banner-header.jpeg);
     height: 100vh;
     margin-bottom: 2rem;
+    background-attachment: fixed;
 }
     .menu{
         display: flex;

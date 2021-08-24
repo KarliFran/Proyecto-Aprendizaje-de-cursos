@@ -4,20 +4,101 @@ flex-direction: column;
 gap: 1rem;
 padding: 1rem;
 }
-.item-noticias{
+.item-noticias {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
 }
 .description-item{
-    background: #fff
+    background: #fff;
+    padding: 1rem;
 }
 .picture-noticia{
     width: 100%;
+    height: 100%;
+}
+.text-principal{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.seccion-noti{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 6rem;
+    font-weight: bold;
 }
 .title-noticia{
     font-size: 1.4rem;
     text-align: initial;
+    color: #AE00FB;
 }
 .description-noticia{
-    color: #999;
+    color: #222;
     font-size: 1rem;
     text-align: justify;
+}
+.fecha-item{
+    font-size: 0.9rem;
+    color: black;
+}
+.sep{
+    color: #777;
+}
+/*PAGINACION*/
+.pagination{
+    display: flex;
+    gap: 0.5rem;
+}
+.page-link{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    line-height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    color: #e3207b;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.page-item:first-child .page-link{
+    border-top-left-radius: 50%;
+    border-bottom-left-radius:50%;
+}
+.page-item:last-child .page-link{
+    border-top-right-radius: 50%;
+border-bottom-right-radius:50%;
+}
+.page-link:hover{
+    border-color: #AE00FB;
+    background-color: #AE00FB;
+    color: white;
+}
+@media (min-width: 1200px){
+    .albun-noticias{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .item-noticias{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        line-height: 2;
+        width: 70%;
+        padding: 0;
+        box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+    }
+    .item-picture{
+        width: 22rem;
+        height: 16rem;
+    }
+    .description-item{
+        width: 60%;
+        padding: 1rem;
+    }
 }
