@@ -1,0 +1,46 @@
+.items-shows{
+    display: flex;
+    overflow: scroll;
+    gap: 1rem;
+    padding: 1rem;
+    scrollbar-width: none;
+}
+.picture-show {
+    width: 100%;
+    height: 100%;
+}
+.show-item-figure{
+    height: 26rem;
+    width: 18rem;
+}
+.nav-pagination{
+    display: none;
+}
+.description-shows{
+    background: #fff;
+    padding: 0.5rem;
+}
+.title-shows{
+    font-size: 1.2rem;
+    color: #e3207b;
+    text-align: initial;
+    text-transform: uppercase;
+
+}
+@media (min-width: 1200px){
+    .items-shows{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.show-item-figure{
+    width: 25rem;
+    height: 31.25rem;
+}
+.nav-pagination{
+    display: block;
+}
+}

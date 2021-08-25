@@ -216,7 +216,7 @@ body{
     flex-direction: column;
 }
 .item-recomend {
-    height: 24rem;
+    height: 22rem;
     position: relative;
     overflow: hidden;
 }
@@ -240,14 +240,14 @@ body{
 }
 .item-publicidad{
     height: 16rem;
+    max-width: 23rem;
 }
 .element-publi{
     width: 100%;
     height: 100%;
 }
-.new{
+.new:hover{
     scale: 1;
-    object-fit: cover;
 }
 @media (min-width: 1200px){
     .Recomendaciones{
@@ -259,7 +259,7 @@ body{
         gap: 1rem;
         grid-template-rows: 16rem;
         height: min-content;
-        padding-left: 3rem;
+        padding-left: 4rem;
     }
     .item-recomend:first-child{
         grid-row: 1 / span 2;
@@ -273,7 +273,7 @@ body{
     .item-recomend {
         height: 16.5rem;
         position: relative;
-        width: 26rem;
+        width: 22rem;
     }
     .element-items-publi{
         display: flex;
