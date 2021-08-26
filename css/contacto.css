@@ -1,0 +1,66 @@
+.details-contact{
+    background: linear-gradient(135deg, #7f279c 0%, #2e279d 200%);
+}
+.description-contact{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+.icon-contact{
+width: 3rem;
+height: 3rem;
+border-radius: 50%;
+border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.icon-contact-map{
+width: 4rem;
+height: 3rem;
+border-radius: 50%;
+border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.contact-entry{
+    background: transparent;
+    border: none;
+border-bottom: 2px solid #999;
+border-radius: 1px;
+color: #fff;
+font-size: 1.2rem;
+transition-duration: 0.3s;
+}
+.contact-entry:focus{
+    border-bottom: 2px solid #e3207b;
+    background: transparent;
+    box-shadow:none;
+}
+.contact-sep{
+    margin-bottom: 1rem;
+}
+.mensagge-contact {
+    color: #fff;
+}
+.sent-contact{
+    color: #fff;
+}
+.buttom-contact{
+    border-color: #AE00FB;
+    background-color: #AE00FB;
+}
+.buttom-contact:hover{
+    background: transparent;
+    scale: 1.1;
+    border-color: #AE00FB;
+}
+.link-contact{
+    color: #B5FFD9;
+}
+.link-contact:hover{
+    text-decoration: none;
+    color: #170055;
+}
+.sold-contact{
+    padding: 1rem;
+}
+.contact-shadow{
+    box-shadow: 10px 10px 10px 7px rgba(0, 0, 0, 0.5);
+}

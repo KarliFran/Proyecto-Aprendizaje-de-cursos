@@ -103,6 +103,17 @@ body{
             text-align: center;
             line-height: 1.6;
         }
+        .mas-section{
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 1rem;
+            padding-left: 1rem;
+            background: #AE00FB;
+            padding-left: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.25rem;
+        }
         @media (min-width: 1200px){
             .nav-menu{
                 display: none;
@@ -142,6 +153,7 @@ body{
             color:white;
             font-weight: bold;
             position: relative;
+            letter-spacing: 0.25rem;
         }
         .title-sold::after{
             position: absolute;
@@ -156,6 +168,7 @@ body{
             height: 24rem;
             position: relative;
             overflow: hidden;
+            cursor: pointer;
         }
         .cd-picture{
             width: 100%;
@@ -188,7 +201,7 @@ body{
             padding: 0.6rem;
             margin: 0;
         }
-        .prueba{
+        .sold-details{
             position: absolute;
             top: 19rem;
         }
@@ -219,11 +232,12 @@ body{
     height: 22rem;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 .item-recomend:hover{
     filter: brightness(1.4);
 }
-.prueba-recomend{
+.details-recomend{
     position: absolute;
     top: 19rem;
 }
@@ -232,6 +246,10 @@ body{
     flex-direction: column;
     gap: 1rem;
     padding-right: 2rem;
+    width: 40%;
+    height: 100%;
+    position: sticky;
+    top: 0;
 }
 .element-items-publi{
     display: flex;
@@ -242,12 +260,24 @@ body{
     height: 16rem;
     max-width: 23rem;
 }
+
 .element-publi{
     width: 100%;
     height: 100%;
 }
 .new:hover{
-    scale: 1;
+    transform: scale(1);
+}
+@media (min-width: 1100px){
+    .element-items-publi{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        justify-content: center;
+    }
+    .items-recomend{
+        width: 40%;
+    }
 }
 @media (min-width: 1200px){
     .Recomendaciones{
@@ -260,13 +290,14 @@ body{
         grid-template-rows: 16rem;
         height: min-content;
         padding-left: 4rem;
+        width: 70%;
     }
     .item-recomend:first-child{
         grid-row: 1 / span 2;
         height: auto;
         width: 30rem;
     }
-    .prueba-recomend{
+    .details-recomend{
         position: absolute;
         top: 0;
     }
@@ -316,10 +347,9 @@ background-attachment: fixed;
 .News-album{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     padding-bottom: 2rem;
     background: #13171d;
-    padding-top: 2rem;
 }
 .items-album{
     display: flex;
@@ -327,6 +357,7 @@ background-attachment: fixed;
     scrollbar-width: none;
     gap: 1rem;
     padding: 2rem;
+    cursor: pointer;
 }
 .album{
     position: unset;
@@ -366,6 +397,7 @@ background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 figure{
     margin: 0;
@@ -470,6 +502,7 @@ margin: 0;
     display: flex;
     justify-content: center;
     margin-bottom: 0;
+    cursor: pointer;
 }
 .item-social:hover{
     background: darkmagenta;
@@ -504,10 +537,11 @@ input{
 }
 .nav-footer{
     display: flex;
-    flex-direction: column;
     width: 100%;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+justify-content: center;
 }
 .nav-item {
     color: #777;
@@ -515,6 +549,9 @@ input{
 .nav-item:hover{
     color: #e3207b;
     text-decoration-line: none;
+}
+.description-header{
+    color: #fff;
 }
 @media (min-width:1200px){
     footer{

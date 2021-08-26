@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto flex</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/noticias.css">
+    <link rel="stylesheet" href="css/shows.css">
+    <link rel="stylesheet" href="css/sobre-nosotros.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="menu">
+            <div class="menu-logo">
+                <a href="index.html"><img class="picture-logo" src="dist/img/logo.png" alt=""></a>
+            </div>
+            <nav class="menu-nav">
+                <button class="btn btn-outline-light nav-menu" onclick="accion()"></button>
+                <div class="general-item">
+                <a href="index.html" class="nav-item desaparece"><i class="fa fa-home" aria-hidden="true"></i><span class="name-menu">Inicio</span></a>
+                <a href="noticias.html" class="nav-item desaparece"><i class="fa fa-paper-plane" aria-hidden="true"></i><span class="name-menu">Noticias</span></a>
+                <a href="shows.html" class="nav-item desaparece"><i class="fas fa-microphone-alt"></i><span class="name-menu">Shows</span></a>
+                <a href="sobre-nosotros.html" class="nav-item desaparece"><i class="fa fa-user" aria-hidden="true"></i><span class="name-menu">Nosotros</span></a>
+                <a href="contacto.html" class="nav-item desaparece"><i class="fa fa-envelope" aria-hidden="true"></i><span class="name-menu">Contacto</span></a>
+            </div>
+            </nav>
+        </div>
+        <div class="text-principal">
+            <h1 class="title-header">Contacto</h1>
+            <h2 class="description-header">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        </div>
+    </header>
+    <!--FIN HEADER-->
+
+    <section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10">
+					<div class="wrapper">
+						<div class="row no-gutters contact-shadow">
+							<div class="col-md-6">
+								<div class="contact-wrap w-100 p-lg-5 p-4">
+									<h3 class="mb-4 mensagge-contact">Mandanos un mensaje</h3>
+                                        <div id="form-message-warning" class="mb-4"></div>
+                                            <div id="form-message-success" class="mb-4 sent-contact">
+                                                Your message was sent, thank you!
+                                        </div>
+									<form method="POST" id="contactForm" name="contactForm" class="contactForm">
+										<div class="row">
+											<div class="col-md-12 contact-sep">
+												<div class="form-group">
+													<input type="text" class="form-control contact-entry" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-12 contact-sep">
+												<div class="form-group">
+													<input type="email" class="form-control contact-entry" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12 contact-sep">
+												<div class="form-group">
+													<input type="text" class="form-control contact-entry" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12 contact-sep">
+												<div class="form-group">
+													<textarea name="message" class="form-control contact-entry" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12 contact-sep">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary buttom-contact">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-6 d-flex align-items-stretch details-contact">
+								<div class="info-wrap w-100 p-lg-5 p-4 img description-contact">
+									<h1 class="title-sold about">
+                                        Contactanos
+                                    </h1>
+									<p class="mb-4">We're open for any suggestion or just to have a chat</p>
+                                <div class="dbox w-100 d-flex align-items-start">
+                                    <div class="icon d-flex align-items-center justify-content-center icon-contact-map">
+                                        <span class="fa fa-map-marker"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                    <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                                    </div>
+                            </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center icon-contact">
+                                        <span class="fa fa-phone"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                    <p><span>Phone:</span> <a class="link-contact" href="tel://1234567920">+ 1235 2356 12</a></p>
+                                </div>
+                            </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center icon-contact">
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                    <p><span>Email:</span> <a class="link-contact" href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                </div>
+                            </div>
+                                <div class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center icon-contact">
+                                        <span class="fa fa-globe"></span>
+                                    </div>
+                                    <div class="text pl-3">
+                                    <p><span>Website</span> <a class="link-contact" href="#">yoursite.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section class="CD-sold sold-contact">
+        <h2 class="mas-section">Mas de nosotros</h2>
+        <h1 class="title-sold">
+            LOS MAS VENDIDOS
+        </h1>
+    
+        <div class="items-cd">
+        <article class="item-sold">
+            <img class="cd-picture" src="dist/img/harry.jpg" alt="">
+            <div class="sold-details">
+            <h2 class="cd-name">Harry Styles ‘Fine Line’</h2>
+            <p class="cd-description" >160,000</p></div>
+        </article>
+        <article class="item-sold">
+            <img class="cd-picture" src="dist/img/lady.jpg" alt="">
+            <div class="sold-details">
+            <h2 class="cd-name">Lady Gaga ‘Chromatica’</h2>
+            <p class="cd-description">258,000</p>
+        </div>
+        </article>
+        <article class="item-sold">
+            <img class="cd-picture" src="dist/img/halsey.jpg" alt="">
+            <div class="sold-details">
+            <h2 class="cd-name"> Halsey ‘Manic’</h2>
+            <p class="cd-description"> 265,000 </p>
+        </div>
+        </article>
+        <article class="item-sold">
+            <figure>
+            <img class="cd-picture" src="dist/img/halsey.jpg" alt="">
+        </figure>
+            <div class="sold-details">
+            <h2 class="cd-name"> Halsey ‘Manic’</h2>
+            <p class="cd-description"> 265,000 </p>
+        </div>
+        </article>
+        </div>
+    </section>
+
+
+
+
+
+
+
+<!--Footer-->
+<div>
+    <section class="redes-sociales">
+        <div class="">
+            <ul class="items-sociales">
+                <li class="item-social">
+                    <img src="dist/img/facebook.png" alt="">
+                </li>
+                <li class="item-social">
+                    <img src="dist/img/gorjeo.png" alt="">
+                </li>
+                <li class="item-social">
+                    <img src="dist/img/logotipo-de-instagram.png" alt="">
+                </li>
+                <li class="item-social">
+                    <img src="dist/img/linkedin.png" alt="">
+                </li>
+                <li class="item-social">
+                    <img src="dist/img/youtube-logotype.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-column">
+        <div class="sobre-nosotros">
+            <h3 class="title-footer">About</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cupiditate?</p>
+        </div>
+        <div class="items-navegacion">
+            <h3 class="title-footer">Navigations</h3>
+            <ul class="nav-footer">
+                    <a href="" class="nav-item "><i class="fa fa-home" aria-hidden="true"></i><span class="name-menu">Inicio</span></a>
+                    <a href="noticias.html" class="nav-item "><i class="fa fa-paper-plane" aria-hidden="true"></i><span class="name-menu">Noticias</span></a>
+                    <a href="" class="nav-item "><i class="fa fa-user" aria-hidden="true"></i><span class="name-menu">Nosotros</span></a>
+                    <a href="shows.html" class="nav-item "><i class="fa fa-book" aria-hidden="true"></i><span class="name-menu">Shows</span></a>
+                    <a href="" class="nav-item"><i class="fa fa-envelope" aria-hidden="true"></i><span class="name-menu">Contacto</span></a>
+            </ul>
+        </div></div>
+        <div class="suscribe-general">
+        <h3 class="title-footer">Suscribe</h3>
+        <div class="suscribe">
+            <input type="Ingresa tu email">
+            <button class="btn btn-danger">Subscribe</button>
+        </div></div>
+    </footer>
+    </div>
+<!--FIN FOOTER-->
