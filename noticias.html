@@ -18,6 +18,7 @@
                 <div class="menu-logo">
                     <a href="index.html"><img class="picture-logo" src="dist/img/logo.png" alt=""></a>
                 </div>
+                <div class="menu-search">
                 <nav class="menu-nav">
                     <button class="btn btn-outline-light nav-menu" onclick="accion()"></button>
                     <div class="general-item">
@@ -28,7 +29,16 @@
                     <a href="contacto.html" class="nav-item desaparece"><i class="fa fa-envelope" aria-hidden="true"></i><span class="name-menu">Contacto</span></a>
                 </div>
                 </nav>
+                <div class="container h-100 search-general">
+                    <div class="d-flex justify-content-center h-100 search-with">
+                      <div class="searchbar">
+                        <input class="search_input" type="text" name="" placeholder="Search...">
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                      </div>
+                    </div>
+        </div>
             </div>
+        </div>
             <div class="text-principal">
                 <h1 class="title-header">NOTICIAS</h1>
                 <h2 class="description-header">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
@@ -187,14 +197,26 @@
                     <a href="" class="nav-item"><i class="fa fa-envelope" aria-hidden="true"></i><span class="name-menu">Contacto</span></a>
             </ul>
         </div></div>
-        <div class="suscribe-general">
-        <h3 class="title-footer">Suscribe</h3>
-        <div class="suscribe">
-            <input type="Ingresa tu email">
-            <button class="btn btn-danger">Subscribe</button>
-        </div></div>
+        <div class="element-search-suscribe">
+            <div class="container h-100 search-general">
+                <div class="d-flex justify-content-center h-100 search-with">
+                  <div class="searchbar">
+                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <a href="#" class="search_icon search-footer"><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+            </div>
+            <div class="suscribe-general">
+            <h3 class="title-footer">Suscribe</h3>
+            <div class="suscribe">
+                <input type="Ingresa tu email">
+                <button class="btn btn-danger">Subscribe</button>
+            </div></div>
+        </div>
     </footer>
     </div>
 <!--FIN FOOTER-->
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script  src="js/navbar.js"></script>
 </html>
