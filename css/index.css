@@ -135,6 +135,74 @@ body{
                 height: auto;
             }
         }
+        /*SEARCH*/
+.searchbar{
+    height: 60px;
+    border-radius: 30px;
+    padding: 10px;
+    }
+.search-general{
+    width: max-content;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.search-with{
+    width: max-content;
+}
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    padding: 0;
+    }
+.search-footer{
+    background: #333;
+    border-radius: 30px;
+}
+    .searchbar:hover > .search_input{
+    width: 86px;
+    color: #fff;
+    transition: width 0.4s linear;
+    border-bottom: 1px solid #e3207b;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e3207b;
+    text-decoration: none;
+    }
+
+    .search_icon{
+    height: 36px;
+    width: 36px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+    .menu-search{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    @media (min-width:1200px){
+        .menu-search{
+            display: flex;
+            flex-direction: row;
+        }
+        .searchbar:hover > .search_input{
+            width: 148px;
+        }
+    }
         /* SECTION CD SOLD*/
         .CD-sold{
             display: flex;
@@ -570,6 +638,16 @@ justify-content: center;
 .description-header{
     color: #fff;
 }
+.btn-subscribe{
+    background-color: rgba(227,32,123,.8);
+    border: 1px solid rgba(227,32,123,.8);
+    color: #fff;
+}
+.btn-subscribe:hover{
+    background-color: darkmagenta ;
+    border: 1px solid darkmagenta;
+    color: #fff;
+}
 @media (min-width:1200px){
     footer{
         display: flex;
@@ -592,67 +670,8 @@ justify-content: center;
         flex-direction: column;
     }
 }
-/*SEARCH*/
-.searchbar{
-    height: 60px;
-    border-radius: 30px;
-    padding: 10px;
-    }
-.search-general{
-    width: max-content;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.search-with{
-    width: max-content;
-}
-    .search_input{
-    color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    }
-.search-footer{
-    background: #333;
-    border-radius: 30px;
-}
-    .searchbar:hover > .search_input{
-    width: 148px;
-    color: #fff;
-    transition: width 0.4s linear;
-    border-bottom: 1px solid #e3207b;
-    }
-
-    .searchbar:hover > .search_icon{
-    background: white;
-    color: #e3207b;
-    text-decoration: none;
-    }
-
-    .search_icon{
-    height: 36px;
-    width: 36px;
-    float: right;
+.element-search-suscribe{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border-radius: 50%;
-    color:white;
-    text-decoration:none;
-    }
-    .menu-search{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-    @media (min-width:1200px){
-        .menu-search{
-            display: flex;
-            flex-direction: row;
-        }
-    }
+}

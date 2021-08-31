@@ -45,11 +45,13 @@ transition-duration: 0.3s;
 .buttom-contact{
     border-color: #AE00FB;
     background-color: #AE00FB;
+    color: #fff;
 }
 .buttom-contact:hover{
     background: transparent;
     scale: 1.1;
     border-color: #AE00FB;
+    color: #fff;
 }
 .link-contact{
     color: #B5FFD9;

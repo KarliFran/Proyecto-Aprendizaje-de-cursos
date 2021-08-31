@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto flex</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/404.css">
+    <link rel="stylesheet" href="css/articulo.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <!--HEADER-->
+    <header class="header header-nav">
+        <div class="menu">
+            <div class="menu-logo">
+                <a href="index.html"><img class="picture-logo" src="dist/img/logo.png" alt=""></a>
+            </div>
+            <div class="menu-search">
+            <nav class="menu-nav">
+                <button class="btn btn-outline-light nav-menu" onclick="accion()"></button>
+                <div class="general-item">
+                <a href="index.html" class="nav-item desaparece"><i class="fa fa-home" aria-hidden="true"></i><span class="name-menu">Inicio</span></a>
+                <a href="noticias.html" class="nav-item desaparece"><i class="fa fa-paper-plane" aria-hidden="true"></i><span class="name-menu">Noticias</span></a>
+                <a href="shows.html" class="nav-item desaparece"><i class="fas fa-microphone-alt"></i><span class="name-menu">Shows</span></a>
+                <a href="sobre-nosotros.html" class="nav-item desaparece"><i class="fa fa-user" aria-hidden="true"></i><span class="name-menu">Nosotros</span></a>
+                <a href="contacto.html" class="nav-item desaparece"><i class="fa fa-envelope" aria-hidden="true"></i><span class="name-menu">Contacto</span></a>
+            </div>
+            </nav>
+            <div class="container h-100 search-general">
+                <div class="d-flex justify-content-center h-100 search-with">
+                    <div class="searchbar">
+                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+    </div>
+        </div>
+    </div>
+    <!--FIN HEADER-->
+    <div class="news-articles">
+            <section class="info-noticia">
+                <figure class="picture-noticia">
+                    <img class="picture-statict" src="dist/img/imagenes-noticias/bilie.jpg" alt="">
+                    <h2 class="description-picture">Description imagen</h2>
+                </figure>
+                <div class="info-noti">
+                    <p class="content-noti" >Escuchar a una estrella del pop cantando lamentos por la presión que conlleva el éxito, que es básicamente lo que hace Billie Eilish en el arranque de su nuevo disco, puede parecer un poco irritante. Pero ninguno de nosotros, pobres mortales, hemos estado ahí, en su situación. Ni en la de Simon Biles, por ejemplo. Y dictar sentencias sobre lo que no se conoce... eso sí que es irritante. Además, hay maneras y maneras. Y la señorita Eilish tiene clase. Eso es innegable. «Things I once enjoyed. Just keep me employed now. Things I'm longing for. Someday, I'll be bored of» («Las cosas que una vez disfruté, ahora sólo son mi empleo. Las cosas que anhelo, algún día me aburriré de ellas»), canta la joven en 'Getting older', el tema de apertura de 'Happier than ever', probablemente el disco más esperado de la temporada.</p>
+
+                    <p class="content-noti">
+                        En el siempre temido segundo disco, Billie Eilish da respiros a su romance con la electrónica sombría para coquetear con la bossa nova y con el neosoul al estilo Winehouse, habla con sagacidad sobre la pérdida de la intimidad y sobre las maquinarias de coerción sexual, y fortalece su estilo propio en un viaje de 16 canciones que parte de la muerte de la inocencia, pasa por el autodescubrimiento de debilidades latentes y termina en la catarsis de la superación y el empoderamiento.
+                    </p>
+                </div>
+            </section>
+            <aside class="news-recent">
+                <h1>Noticias Recientes</h1>
+                <ul class="news-recent-items">
+                    <a class="news-recent-item" href=""><li>"All things must pass", el disco que liberó a George Harrison cumple 50 años. </li></a>
+                    <a class="news-recent-item"href=""><li>'Happier than ever' de Billie Eilish, el éxito de no rendirse al éxito</li></a>
+                    <a class="news-recent-item" href=""><li >Bob Dylan anuncia un nuevo disco de su 'Bootleg Series': 'Springtime In New York'</li></a>
+                    <a class="news-recent-item" href=""><li>Todo sobre ABBA: la playlist que va más allá de las canciones de su carrera</li></a>
+                </ul>
+            </aside>
+</div>
+            <!--COMENTARIOS-->
+            <section class="coment-send">
+            <div class="container">
+                        <h1>Comments</h1>
+                        <div class="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
+                            <h4>Jhon Doe</h4> <span>- 20 October, 2018</span> <br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                        </div>
+                        <div class="text-justify darker mt-4 float-right"> <img src="https://i.imgur.com/CFpa3nK.jpg" alt="" class="rounded-circle" width="40" height="40">
+                            <h4>Rob Simpson</h4> <span>- 20 October, 2018</span> <br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                        </div>
+                        <div class="comment mt-4 text-justify"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" class="rounded-circle" width="40" height="40">
+                            <h4>Jhon Doe</h4> <span>- 20 October, 2018</span> <br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                        </div>
+                        <div class="darker mt-4 text-justify"> <img src="https://i.imgur.com/CFpa3nK.jpg" alt="" class="rounded-circle" width="40" height="40">
+                            <h4>Rob Simpson</h4> <span>- 20 October, 2018</span> <br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
+                        </div>
+            </div>
+            <div class="form-mensagge">
+                <form id="algin-form" class="container-form">
+                    <div class="form-group">
+                        <h4 class="title-form">Leave a comment</h4>
+                        <label for="message">Message</label>
+                        <textarea name="msg" id="" msg cols="30" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group"> <label for="name">Name</label> <input type="text" name="name" id="fullname" class="form-control"> </div>
+                    <div class="form-group"> <label for="email">Email</label> <input type="text" name="email" id="email" class="form-control"> </div>
+                    <div class="form-group"> <button type="button" id="post" class="btn buttom-contact">Post Comment</button> </div>
+                </form>
+            </div>
+
+</section>
+
+
+    <div>
+        <section class="redes-sociales">
+            <div class="">
+                <ul class="items-sociales">
+                    <li class="item-social">
+                        <img src="dist/img/facebook.png" alt="">
+                    </li>
+                    <li class="item-social">
+                        <img src="dist/img/gorjeo.png" alt="">
+                    </li>
+                    <li class="item-social">
+                        <img src="dist/img/logotipo-de-instagram.png" alt="">
+                    </li>
+                    <li class="item-social">
+                        <img src="dist/img/linkedin.png" alt="">
+                    </li>
+                    <li class="item-social">
+                        <img src="dist/img/youtube-logotype.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Footer-->
+        <footer>
+            <div class="footer-column">
+            <div class="sobre-nosotros">
+                <h3 class="title-footer">About</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cupiditate?</p>
+            </div>
+            <div class="items-navegacion">
+                <h3 class="title-footer">Navigations</h3>
+                <ul class="nav-footer">
+                        <a href="" class="nav-item "><i class="fa fa-home" aria-hidden="true"></i><span class="name-menu">Inicio</span></a>
+                        <a href="noticias.html" class="nav-item "><i class="fa fa-paper-plane" aria-hidden="true"></i><span class="name-menu">Noticias</span></a>
+                        <a href="" class="nav-item "><i class="fa fa-user" aria-hidden="true"></i><span class="name-menu">Nosotros</span></a>
+                        <a href="shows.html" class="nav-item "><i class="fa fa-book" aria-hidden="true"></i><span class="name-menu">Shows</span></a>
+                        <a href="" class="nav-item"><i class="fa fa-envelope" aria-hidden="true"></i><span class="name-menu">Contacto</span></a>
+                </ul>
+            </div></div>
+            <div class="element-search-suscribe">
+            <div class="container h-100 search-general">
+                <div class="d-flex justify-content-center h-100 search-with">
+                    <div class="searchbar">
+                    <input class="search_input" type="text" name="" placeholder="Search...">
+                    <a href="#" class="search_icon search-footer"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="suscribe-general">
+            <h3 class="title-footer">Suscribe</h3>
+            <div class="suscribe">
+                <input type="Ingresa tu email">
+                <button class="btn btn-subscribe">Subscribe</button>
+            </div></div>
+        </div>
+        </footer>
+        <!--FIN FOOTER-->
+        </div>
+        </body>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script  src="js/navbar.js"></script>
+        </html>
