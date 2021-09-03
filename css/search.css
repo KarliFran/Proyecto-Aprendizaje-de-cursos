@@ -1,0 +1,182 @@
+.header-entry{
+    height: 30vh;
+    margin-bottom: 0;
+}
+.results-search{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.title-header{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.search-title{
+    border-left: 4px solid #ff0080;
+    padding-left: 0.4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: initial;
+}
+.search-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    grid-template-rows: auto;
+}
+.img-search{
+    width: 100%;
+    height: 100%;
+}
+.search-picture{
+    height: 25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 0.5rem;
+}
+.article-search{
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.title-item{
+    padding-bottom: 0.5rem;
+    position: relative;
+    color: #e3207b;
+}
+.title-item::after {
+    content: "";
+    position: absolute;
+    width: 16rem;
+    left: 3rem;
+    bottom: 0;
+    height: 1px;
+    background: #666;
+}
+.section-divider {
+    background: #666;
+    position: relative;
+    overflow: visible;
+    z-index: 100;
+}
+.section-divider::after {
+    z-index: 10000;
+    content: url('https://i.postimg.cc/cHVQ9N06/disco-de-musica-con-detalles-en-blanco.png');
+    font-family: FontAwesome;
+    color: #54397e;
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    margin-left: -20px;
+    font-size: 30px;
+    top: -16px;
+    left: 50%;
+    right: 50%;
+}
+.details-search {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+}
+.info-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.small, small{
+    font-size: 1.1rem;
+    gap: 0.5rem;
+}
+.category{
+    color: #fff;
+}
+a:hover{
+    text-decoration: none;
+}
+.category:hover{
+    color: rgba(174,0,251,.8);
+}
+.btn{
+    width: max-content;
+}
+.btn-search{
+    background-color: transparent;
+    border: 1px solid rgba(227,32,123,.8);
+    color: #fff;
+}
+.btn-search:hover{
+    background-color: rgba(227,32,123,.8);
+    color: #fff;
+}
+.btn-search::after{
+    content:url('https://i.postimg.cc/N0ChrKDm/avance-rapido.png');
+    position: relative;
+top: 4px;
+left: 3px;
+}
+.aside-search{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.post-recent{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.picture-aside{
+    width: 24rem;
+    height: 15rem;
+}
+.item-recent{
+    object-fit: cover;
+}
+.publicidad-lateral{
+    width: 100%;
+    position: relative;
+}
+.post-recent{
+    list-style: none;
+}
+.title-recent{
+    text-align: initial;
+}
+.recent-aside{
+    border: 1px solid #444;
+    padding: 1rem;
+    height: 42rem;
+}
+.set-search{
+    padding-right: 0;
+}
+.item-publicidad{
+    padding: 1rem;
+}
+@media (min-width:1200px){
+    .conten-page-search{
+        display: flex;
+        gap: 3rem;
+    }
+    .aside-search{
+        padding: 1rem;
+    }
+    .results-search{
+        width: 60%;
+        padding-left: 6rem;
+    }
+    .article-search{
+        width: 24rem;
+    }
+    .search-picture{
+        height: 20rem;
+    }
+    .section-divider::after{
+        display: none;
+    }
+    .recent-aside{
+        height: 38rem;
+    }
+}

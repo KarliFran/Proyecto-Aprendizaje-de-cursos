@@ -10,8 +10,8 @@
     height: 100%;
 }
 .show-item-figure{
-    height: 26rem;
     width: 18rem;
+    height: 22rem;
 }
 .nav-pagination{
     display: none;
@@ -47,10 +47,6 @@
     justify-content: center;
 }
 
-.show-item-figure{
-    width: 25rem;
-    height: 31.25rem;
-}
 .nav-pagination{
     display: block;
 }

@@ -95,6 +95,7 @@ body{
             align-items: center;
             height: 100%;
             padding: 1rem;
+            justify-content: center;
         }
         h1{
             font-size: 1.6rem;
