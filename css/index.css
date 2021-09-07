@@ -25,6 +25,10 @@ body{
     margin-bottom: 2rem;
     background-attachment: fixed;
 }
+.header-entry{
+    height: auto;
+    margin-bottom: 0;
+}
     .menu{
         display: flex;
         align-items: center;
@@ -114,6 +118,7 @@ body{
             padding-left: 3rem;
             margin-bottom: 1rem;
             letter-spacing: 0.25rem;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
         }
         @media (min-width: 1200px){
             .nav-menu{
@@ -156,29 +161,20 @@ body{
     border: 0;
     outline: 0;
     background: none;
-    width: 0;
-    caret-color:transparent;
+    width: 110px;
     line-height: 40px;
     transition: width 0.4s linear;
     padding: 0;
+    border-bottom: 1px solid #e3207b;
     }
 .search-footer{
     background: #333;
     border-radius: 30px;
 }
-    .searchbar:hover > .search_input{
-    width: 86px;
-    color: #fff;
-    transition: width 0.4s linear;
-    border-bottom: 1px solid #e3207b;
-    }
-
-    .searchbar:hover > .search_icon{
-    background: white;
-    color: #e3207b;
-    text-decoration: none;
-    }
-
+.input-susbcribe{
+    color: black;
+caret-color: rgba(227,32,123,.8);
+}
     .search_icon{
     height: 36px;
     width: 36px;
@@ -200,9 +196,24 @@ body{
             display: flex;
             flex-direction: row;
         }
+        .search_input{
+            width: 0;
+        }
         .searchbar:hover > .search_input{
             width: 148px;
         }
+        .searchbar:hover > .search_input{
+            width: 86px;
+            color: #fff;
+            transition: width 0.4s linear;
+            border-bottom: 1px solid #e3207b;
+            }
+        
+            .searchbar:hover > .search_icon{
+            background: white;
+            color: #e3207b;
+            text-decoration: none;
+            }
     }
         /* SECTION CD SOLD*/
         .CD-sold{
@@ -607,16 +618,34 @@ footer{
     width: 100%;
     padding: 1rem;
 }
+.title-suscribe{
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
 .sobre-nosotros{
     padding: 1rem;
 }
 .suscribe{
     display: flex;
     padding-bottom: 2rem;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
 }
 input{
     padding: 0.3rem;
     color: #fff;
+    width: 60%;
+    outline: none;
+}
+.sobre-suscribe{
+    position: absolute;
+    left: 29.5rem;
+}
+.suscribe:hover > .sobre-suscribe{
+    color: darkmagenta;
 }
 .items-navegacion{
     padding: 1rem;
@@ -649,6 +678,14 @@ justify-content: center;
     border: 1px solid darkmagenta;
     color: #fff;
 }
+.suscribe-general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #13171d;
+    border-bottom: 3px solid #333;
+    padding: 1rem;
+}
 @media (min-width:1200px){
     footer{
         display: flex;
@@ -660,19 +697,6 @@ justify-content: center;
         flex-direction: row;
     }
     .suscribe{
-        display: block;
-    }
-    .suscribe-general{
         display: flex;
-        flex-direction: column;
     }
-    .footer-colum{
-        display: flex;
-        flex-direction: column;
-    }
-}
-.element-search-suscribe{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
