@@ -24,6 +24,7 @@
 .img-search{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .search-picture{
     height: 25rem;
@@ -89,12 +90,18 @@
 }
 .category{
     color: #fff;
+    background-color:  rgba(227,32,123,.8);
+    padding: 0.4rem;
+    border-radius: 3px;
+    box-shadow: 7px 7px 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 a:hover{
     text-decoration: none;
 }
 .category:hover{
-    color: rgba(174,0,251,.8);
+    background-color: transparent;
+    border: 1px solid  rgba(227,32,123,.8);
 }
 .btn{
     width: max-content;
@@ -135,11 +142,12 @@ a:hover{
     width: 100%;
     position: relative;
 }
-.item-aside-search img{
-    filter: brightness(0.7);
+.item-aside-search{
+position: relative;
 }
 .item-aside-search:hover img{
-    filter: brightness(1);
+    filter: brightness(0.7);
+    transition: 0.2s linear;
 }
 .post-recent{
     list-style: none;
@@ -158,6 +166,21 @@ a:hover{
 .item-publicidad{
     padding: 1rem;
 }
+.btn-recent{
+    color: #fff;
+    position: absolute;
+    top: 7rem;
+    right: 44%;
+    width: 4rem;
+    background: #e3207b;
+    padding: .2rem;
+    opacity: 0;
+    transition: 0.2s linear;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+li:hover > .btn-recent{
+    opacity: 1;
+}
 @media (min-width:1200px){
     .conten-page-search{
         display: flex;
@@ -171,7 +194,7 @@ a:hover{
         padding-left: 6rem;
     }
     .article-search{
-        width: 24rem;
+        width: 22rem;
     }
     .search-picture{
         height: 20rem;

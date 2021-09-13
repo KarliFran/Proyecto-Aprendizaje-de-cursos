@@ -1,9 +1,11 @@
 .items-shows{
     display: flex;
     overflow: scroll;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 4rem;
+    padding: 2rem;
     scrollbar-width: none;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .picture-show {
     width: 100%;
@@ -11,17 +13,17 @@
 }
 .show-item-figure{
     width: 18rem;
-    height: 22rem;
+    height: 18rem;
 }
 .nav-pagination{
     display: none;
 }
 .description-shows{
     background: #fff;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 .title-shows{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #e3207b;
     text-align: initial;
     text-transform: uppercase;
@@ -38,6 +40,18 @@
 .shows-item:hover{
     transform: scale(1.1);
 }
+.precio-shows{
+    color: #e3207b;
+    text-align: end;
+}
+.btn-recent {
+    position: absolute;
+    top: 12rem;
+    right: 45%;
+    left: 50%;
+    width: 3rem;
+    background: darkmagenta;
+    padding: 0.1;
 @media (min-width: 1200px){
     .items-shows{
     display: flex;

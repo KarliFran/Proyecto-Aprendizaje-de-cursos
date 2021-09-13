@@ -108,6 +108,9 @@ body{
             text-align: center;
             line-height: 1.6;
         }
+        h2{
+            margin-bottom: 0;
+        }
         .mas-section{
             font-size: 2rem;
             text-transform: uppercase;
@@ -285,6 +288,22 @@ caret-color: rgba(227,32,123,.8);
             position: absolute;
             top: 19rem;
         }
+        .second-details{
+            display: flex;
+        }
+        .precio-home{
+            color: #fff;
+            background-color: rgba(227,32,123);
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            width: 4rem;
+            justify-content: center;
+        }
+        .precio-retro{
+            color: #fff;
+            font-weight: bold;
+        }
         @media (min-width: 750px){
             .title-sold::after {
                 left: 20rem;
@@ -329,7 +348,10 @@ caret-color: rgba(227,32,123,.8);
 }
 .details-recomend{
     position: absolute;
-    top: 19rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .publicidad-lateral{
     display: flex;
@@ -373,6 +395,10 @@ caret-color: rgba(227,32,123,.8);
     .publicidad-lateral{
         width: 40%;
         padding-right: 2rem;
+    }
+    .details-recomend{
+        display: flex;
+        align-items: flex-start;
     }
 }
 @media (min-width: 1200px){
@@ -642,7 +668,6 @@ input{
 }
 .sobre-suscribe{
     position: absolute;
-    left: 29.5rem;
 }
 .suscribe:hover > .sobre-suscribe{
     color: darkmagenta;
@@ -698,5 +723,9 @@ justify-content: center;
     }
     .suscribe{
         display: flex;
+    }
+    .sobre-suscribe{
+        position: absolute;
+        left: 29.5rem;
     }
 }
