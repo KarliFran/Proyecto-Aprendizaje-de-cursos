@@ -18,9 +18,6 @@ body{
 .header{
     display: flex;
     flex-flow: column nowrap;
-    background-position: center;
-    background-attachment: contain;
-    background-image: linear-gradient(to bottom, rgba(62, 0, 255, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%), url(../dist/img/banner-header.jpeg);
     height: 100vh;
     margin-bottom: 2rem;
     background-attachment: fixed;
@@ -28,6 +25,9 @@ body{
 .header-entry{
     height: auto;
     margin-bottom: 0;
+    background-position: center;
+    background-attachment: contain;
+    background-image: linear-gradient(to bottom, rgba(62, 0, 255, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%), url(../dist/img/banner-header.jpeg);
 }
     .menu{
         display: flex;
@@ -38,6 +38,8 @@ body{
         justify-content: space-between;
         padding-left: 2rem;
         padding-right: 2rem;
+        position: relative;
+        z-index: 999;
     }
     .menu-logo{
         width: 6rem;
@@ -131,7 +133,7 @@ body{
                 display: inline-block;
             }
             .menu{
-                background: rgba(0, 0, 0, .1);
+                background: rgba(0, 0, 0, 0.5);
             }
             .menu-nav a{
                 background-color: transparent;
@@ -203,15 +205,11 @@ caret-color: rgba(227,32,123,.8);
             width: 0;
         }
         .searchbar:hover > .search_input{
-            width: 148px;
-        }
-        .searchbar:hover > .search_input{
-            width: 86px;
+            width: 153px;
             color: #fff;
             transition: width 0.4s linear;
             border-bottom: 1px solid #e3207b;
             }
-        
             .searchbar:hover > .search_icon{
             background: white;
             color: #e3207b;
@@ -665,6 +663,7 @@ input{
     color: #fff;
     width: 60%;
     outline: none;
+    padding-left: 2rem;
 }
 .sobre-suscribe{
     position: absolute;

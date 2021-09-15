@@ -7,6 +7,7 @@
     <title>Proyecto flex</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/slider-home.css">
     <link rel="stylesheet" href="css/shows.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -14,34 +15,69 @@
 <body>
     <!--HEADER-->
     <header class="header">
-        <div class="menu">
-            <div class="menu-logo">
-                <a href="index.html"><img class="picture-logo" src="dist/img/logo.png" alt=""></a>
-            </div>
-            <div class="menu-search">
-            <nav class="menu-nav">
-                <button class="btn btn-outline-light nav-menu" onclick="accion()"></button>
-                <div class="general-item">
-                <a href="index.html" class="nav-item desaparece"><i class="fa fa-home" aria-hidden="true"></i><span class="name-menu">Inicio</span></a>
-                <a href="noticias.html" class="nav-item desaparece"><i class="fa fa-paper-plane" aria-hidden="true"></i><span class="name-menu">Noticias</span></a>
-                <a href="shows.html" class="nav-item desaparece"><i class="fas fa-microphone-alt"></i><span class="name-menu">Shows</span></a>
-                <a href="sobre-nosotros.html" class="nav-item desaparece"><i class="fa fa-user" aria-hidden="true"></i><span class="name-menu">Nosotros</span></a>
-                <a href="contacto.html" class="nav-item desaparece"><i class="fa fa-envelope" aria-hidden="true"></i><span class="name-menu">Contacto</span></a>
-            </div>
-            </nav>
-            <div class="container h-100 search-general">
-                <div class="d-flex justify-content-center h-100 search-with">
-                    <div class="searchbar">
-                    <input class="search_input" type="text" name="" placeholder="Search...">
-                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-                    </div>
+    <section id="container-slider">
+        <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+        <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+        <ul class="listslider">
+        <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+        <li><a itlist="itList_1" href="#"></a></li>
+        <li><a itlist="itList_2" href="#"></a></li>
+        </ul>
+        <ul id="slider">
+            <div class="menu">
+                <div class="menu-logo">
+                    <a href="index.html"><img class="picture-logo" src="dist/img/logo.png" alt=""></a>
                 </div>
-    </div>
+                <div class="menu-search">
+                <nav class="menu-nav">
+                    <button class="btn btn-outline-light nav-menu" onclick="accion()"></button>
+                    <div class="general-item">
+                    <a href="index.html" class="nav-item desaparece"><i class="fa fa-home" aria-hidden="true"></i><span class="name-menu">Inicio</span></a>
+                    <a href="noticias.html" class="nav-item desaparece"><i class="fa fa-paper-plane" aria-hidden="true"></i><span class="name-menu">Noticias</span></a>
+                    <a href="shows.html" class="nav-item desaparece"><i class="fas fa-microphone-alt"></i><span class="name-menu">Shows</span></a>
+                    <a href="sobre-nosotros.html" class="nav-item desaparece"><i class="fa fa-user" aria-hidden="true"></i><span class="name-menu">Nosotros</span></a>
+                    <a href="contacto.html" class="nav-item desaparece"><i class="fa fa-envelope" aria-hidden="true"></i><span class="name-menu">Contacto</span></a>
+                </div>
+                </nav>
+                <div class="container h-100 search-general">
+                    <div class="d-flex justify-content-center h-100 search-with">
+                        <div class="searchbar">
+                        <input class="search_input" type="text" name="" placeholder="Search...">
+                        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
         </div>
-    </div>
-        <div class="text-principal">
-            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque repellendus reprehenderit, exercitationem architecto iusto vel repellat, excepturi non nostrum quos, asperiores modi distinctio esse perferendis. Quia nisi numquam ipsa? Quos, enim. In recusandae quibusdam praesentium minus accusamus odio, quam velit.</h1>
+            </div>
         </div>
+        <li class="item-slider" style="background-image: url('dist/img/banner-header.jpeg'); z-index:0; opacity: 1;">
+            <div class="content_slider" >
+            <div>
+                <h2 class="slider-name">Contactanos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatibus atque facilis natus ipsum in.</p>
+            <a href="contacto.html" class="btnSlider">Ver más</a>
+        </div>
+            </div>
+            <li class="item-slider" style=" background-image: linear-gradient(to bottom, rgba(62, 0, 255, 0.3) 100%, rgba(0, 0, 0, 0.1) 0%), url('dist/img/disk.jpg'); ">
+                <div class="content_slider" >
+                <div>
+                    <h2 class="slider-name">Discos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias commodi sequi vel enim aliquam minus.</p>
+                <a href="#" class="btnSlider">Ver más</a>
+            </div>
+                </div>
+            </li>
+        </li>
+        <li class="item-slider" style="background-image:linear-gradient(to bottom, rgba(62, 0, 255, 0.3) 100%, rgba(0, 0, 0, 0.1) 0%),  url('dist/img/audience.jpg'); ">
+            <div class="content_slider" >
+            <div>
+                <h2 class="slider-name">Shows</h2>
+            <p>Navega por los diferentes Shows, en fechas recientes y compra tu boleto aqui</p>
+            <a href="shows.html" class="btnSlider">Ver más</a>
+            </div>
+            </div>
+        </li>
+    </ul>
+    </section>
     </header>
     <!--FIN HEADER-->
     <!--SECCION MAS VENDIDOS-->
@@ -58,7 +94,7 @@ data-aos-duration="3000">
         <h2 class="cd-name">Harry Styles ‘Fine Line’</h2>
         <div class="second-details">
             <p class="cd-description"> 265,000</p>
-            <h3 class="precio-home">$25</h3></div>
+            <h3 class="precio-home">$30</h3></div>
     </article>
     <article class="item-sold">
         <img class="cd-picture" src="dist/img/lady.jpg" alt="">
@@ -66,7 +102,7 @@ data-aos-duration="3000">
         <h2 class="cd-name">Lady Gaga ‘Chromatica’</h2>
         <div class="second-details">
             <p class="cd-description"> 265,000</p>
-            <h3 class="precio-home">$25</h3></div>
+            <h3 class="precio-home">$30</h3></div>
     </div>
     </article>
     <article class="item-sold">
@@ -107,7 +143,7 @@ data-aos-duration="3000">
         <h2 class="cd-name">Harry Styles ‘Fine Line’</h2>
         <div class="second-details">
             <p class="cd-description"> 265,000</p>
-            <h3 class="precio-home">$25</h3></div></div>
+            <h3 class="precio-home">$30</h3></div></div>
     </article>
     <article class="item-recomend">
         <figure>
@@ -117,7 +153,7 @@ data-aos-duration="3000">
         <h2 class="cd-name">Lady Gaga ‘Chromatica’</h2>
         <div class="second-details">
             <p class="cd-description"> 265,000</p>
-            <h3 class="precio-home">$25</h3></div>
+            <h3 class="precio-home">$30</h3></div>
     </div>
     </article>
     <article class="item-recomend">
@@ -272,10 +308,11 @@ data-aos-duration="3000">
     </div>
 </footer>
 <!--FIN FOOTER-->
-</div>
+
 </body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script  src="js/navbar.js"></script>
+    <script src="js/slider.js"></script>
 </html>
